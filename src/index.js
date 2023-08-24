@@ -13,7 +13,19 @@ var arrayWord = [
   "grapefruit",
 ];
 
-// Autocomplete function
+function autocompleteFu(inputElement, arrayOfName) {
+  inputElement.addEventListener("input", () => {
+    closeAllLists();
+    let nowValue = this.value;
+    if (!val) {
+      return false;
+    }
+    let divTooltip = document.createAttribute("div");
+    divTooltip = setAttribute("id", this.id + "autocompleteList");
+    divTooltip = setAttribute("class", "autocomplete-items");
+  });
+}
+
 function autocomplete(inp, arr) {
   var currentFocus;
   inp.addEventListener("input", function (e) {
